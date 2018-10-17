@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+
+/*
+Do not try to include the other libraries
+*/
+

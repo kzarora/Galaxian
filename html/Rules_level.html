@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="required.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+
+<style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: 'Yatra One', cursive;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+
+.navbar {
+  bottom: 30px;
+}
+  /*  My Rules Begin !!!  */
+
+.rule{
+    font-family: 'Cutive' ,serif;
+    background-color: rgba(155, 100, 100, 0.5);
+    padding: 3%;
+    font-size: 25px;
+    margin:0 auto;
+    margin-bottom: 100px;
+    color: #CBFF6B; 
+    border: 5px solid #CBFF6B;
+    border-radius: 25px;
+    width: 80%;
+}
+ul{
+  text-align: left;
+}
+  
+  /*  My Rules End !!!  */  
+
+</style>
+</head>
+<body oncontextmenu="return false;" style="text-align: center;">
+<h1 style="font-family: Vast Shadow, cursive;font-size: 300%;color:#FDA543;text-align: center;">Rules</h1>
+
+<div class="rule">
+
+<p>
+  Rules are made to follow.<br><br> More you abide to the rules and regulations more you get the success !! <br><br> Happy Journey :)<br><br>
+  <ul>
+  <li>You will be given a 3d map to traverse.</li>
+  <li>User can traverse anywhere in the universe.</li>
+  <li>Only MCA students are eligible for prizes. Your college id card will be verified.</li>
+  <li>It is an adventure game with 5 levels. The complexity of the game increases as you progress through levels.</li>
+  <li>Your system should atleast have 1GB of RAM for this game.</li>
+  <li>If the inputs are not set, set them accordingly.</li>
+  <li>Please enter valid gmail ID. We will be able to contact you only using them.</li>
+  <li>Valid gmail id should be same for the game and the official GALAXIAN website.</li>
+  <li>In case of any unfair activity, your account will be blocked.</li>
+  <li>In case of data forgery, the participant can be disqualified for participation and the decision of the Organising Committee, Version'18 will be final and binding.</li>
+
+</ul>
+</p>
+
+
+<button class="accordion">Level 1: CrunchBox (Normal coding questions).</button>
+<div class="panel">
+  <ul>
+  <li>The C/C++ code should be compatible with gcc-4.8.4+ and g++-4.8.4+</li>
+  <li>Other important information will be provided alongside proceeding game.</li>
+  <li>The live leaderboard is only for Informal process and should be cited as the final reference.</li>
+  <li>All the inputs are in stdin and all the outputs are in stdout.</li>
+</ul>
+</div>
+<button class="accordion">Contact Us:</button>
+<div class="panel">
+  <ul>
+  <li>Kshitiz: 9791501849</li>
+  <li>Udit: 9981122335</li>
+</ul>
+</div>
+
+</div>
+
+
+<!-- my navigation bar at bottom -->
+<div class="navbar" id="myNavbar">
+  <a href="Rules.html" class="active">Rules</a>
+  <a href="Play.html">Play</a>
+  <a id="myleadBtn">Leader Board</a>
+  <a href="About.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+<div class="foot">
+<p style="font-family: 'Hanalei Fill', cursive; font-size:15px;"> Designed with <i style="font-size:13px; color: red;" class="fa">&#xf004;</i> by EEC</p>
+</div>
+
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    panel.style.overflow="scroll"; 
+  });
+}
+
+
+
+</script>
+
+</body>
+</html>

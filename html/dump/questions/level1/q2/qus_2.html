@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADAVENTURE</title>
+</head>
+<body>
+<h1>Message compression</h1>
+<br>
+Universe is a mystical place and thing are distant in terms of light years, but what is the sense of such journey if knowledge isnt shared to ISRO space station. Captain Harmit is having a very high frequency to transmitter installed in his Udyan(Space Craft),to transmit his message to ISRO but that consumes lot of energy to send such detailed text, he decided  make an Short Hand notation of a character string to transmit it.
+<br>for example "ALLIZZWELL" is converted to "A1L2I1Z2W1E1L2"  i.e contineous repeating character are replaced with frequency of occurence contineously. But Captain is not sure wether to use this algol or not as in this case length of msg is 10 but of shorthand msg is 14. But the Encded msg he is sending to ISRO is having multiple repeating characters.
+Help Captain Harmit to find worthness of this algorithm, Your name will be in Barve books of Space Researchers, But wait its not that easy your answer should be acurate upto 10 digits of decimal, Now go Ahead.
+<br>
+<br>
+<b>Input</b>
+<br>First Line of Input is A i.e. no of Msg Captain Harmit wants to test worth of this Algorithm
+<br>For each Msg L and C the length of Msg and no of distinct Characters in msg 
+<br><br><b>Output</b>
+<br>Print Expected lenght of Shorthand msg and "YES"  if expected lenght is smaller or equal to length
+<br>else Print Expected lenght of Shorthand msg and "NO"  if expected lenght is greater than Msg lenght.
+<br>Note: lenght be upto 2 decimal places. 
+<br><br><b>Constraints</b>
+<br>1 <= A  <= 2000
+<br>1 <= L, C <= 2000
+<br><br><b>Example</b>
+<br><b>Input:</b>
+<br>2
+<br>7 1
+<br>3 2
+<br><br><b>Output:</b>
+<br>2.0
+<br>YES
+<br>4.0
+<br>NO
+<br>
+<b>Explaination</b>
+
+<b><br>Example case 1:</b>
+<br>There is only one string: AAAAAAA with compressed string = A7 .Therefore length = 2 YES it is efficient as 2<=7
+<br><br>
+<b>Example case 2</b>
+<br>There can be following Msg
+<br>"AAA": "A3". Len = 3
+<br><br>
+<br>"AAD": "A2D1". Len = 4 
+<br>"ADA": "A1D1A1". Len = 6
+<br>"ADD": "A1D2". Len = 4
+<br>"DAA": "D1A2". Len = 4
+<br>"DAD": "D1A1D1". Len = 6
+<br>"DDA": "D2A1". Len = 4
+<br>"DDD": "D3". Len = 2
+<br>Expected value = (2+4+6+4+4+6+4+2)/8 = 32/8 = 4 NO because 4>3
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+float getProbability(int *p,int sum);
+int main(){
+	int sum,i;
+	int T=0;
+	int p[7];
+	float P;
+	scanf("%d",&T);
+	while(T--){
+		for(i=1;i<7;i++){
+			scanf("%d",&p[i]);
+		}
+		scanf("%d",&sum);
+		P=getProbability(p,sum);
+		printf("%f\n",P);
+	}
+}
+

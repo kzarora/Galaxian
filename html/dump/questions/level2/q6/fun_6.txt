@@ -1,0 +1,5 @@
+/*
+float getBmi(float w,char height[]){
+	//Write this function return the value
+	
+}*/

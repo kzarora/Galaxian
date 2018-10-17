@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADAVENTURE</title>
+</head>
+<body>
+<h1>Maze Escape</h1>
+<br>
+Earth is only planet in solar system having life, and Mars is most likely planet to earth. To solve the unknown mysteries of Life Captain Harmit landed on Mars and was amazed to see a Rocky Maze having opened with right turn, and the length lane after 1st turn is N units.
+<br>After waking such few lanes and taking right and left turns alternately he observes that the length of lane after every turn is being reduced in a pattern
+<br>i.e. if length of current lane is a exponential power of 2 than after a turn it will become half
+<br>if length of current lane is not a exponential power of 2 than after a turn it will become highest power of 2 less than current length.
+<br>This pattern is observed only if alternate turns are followed i.e. R->L->R... else length is double the current length after turn.
+<br>Maze ends only when the length of current lane becomes 1 unit and you will not take turn either Left or Right for this lane.
+<br>Captain Harmit is having limited amount of Oxygen with him so he wants to reach fastest to other end, your task is to trace his location and <br>Print Last turn he will to reach maze end.
+<br><br>
+<b>Input</b>
+<br>First line is having Number A denoting no of test cases.
+<br>Each test case has a Number N denoting length of 1st lane.
+<br><br>
+<b>Constraints</b>
+<br>1<=A<=200
+<br>1<=N<=100000000
+
+<br><br><b>Output Format</b>
+<br>For each test case print the last turn taken ie. "RIGHT" of "LEFT" in new line.
+<br><b>Note:</b> If maze ends before starting than print "LEFT" as he is unable to make First Right turn.
+<br><br><b>Example</b>
+<br><b>Input</b> 
+<br>1
+<br>18
+<br><b>Output</b>
+<br>LEFT
+<br><br><b>Explanation</b> 
+<br>After 1st Turn (R) N = 18-16=2
+<br>After 2nd Turn (L) N = 2-1 =1
+<br>Hence LEFT
+
+<br><br>
+
+</body>
+</html>
+
+
+

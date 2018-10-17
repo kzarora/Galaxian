@@ -1,0 +1,7 @@
+/*
+float getProbability(int *p,int sum){
+	p[1] is occurence of 1
+	p[2] is occurence of 2
+	..............
+	return the required probability
+} */

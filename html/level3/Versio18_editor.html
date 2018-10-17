@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+<link rel="stylesheet" type="text/css" href="id.css">
+<script type="text/javascript">
+  function set()
+  {
+    var str = document.getElementByName("tcode");
+	
+    document.getElementByName().innerHTML = str;
+}
+</script>
+</head>
+
+<body>
+<form action="Version18_level3begin.php" method="post">
+    <div>
+
+  <textarea rows="30" cols="150" name="tcode" placeholder="//put your code here"></textarea>
+  </div>
+  <div>
+  <input type="submit" name="code" value="Run" align="center" onclick="set();" >
+  </div>
+  <div>
+  <textarea rows="8" cols="150" name="answer" class="ans" placeholder="Your Code's Output" id="output" ></textarea>
+  </div>
+</form>
+</body>
+</html>

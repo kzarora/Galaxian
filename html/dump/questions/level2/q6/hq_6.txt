@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+float getBmi(float w,char *height);
+int main(){
+	float bmi, w,h;
+	char height[10];
+	int T;
+	scanf("%d",&T);
+	while(T--){
+		scanf("%f%s",&w,height);
+		bmi=getBmi(w,height);
+		printf("%f\n",bmi);
+	}
+	return 0;
+}
+
+/*
+float getBmi(float w,char height[]){
+	//Write this function return the value
+	
+}*/
+

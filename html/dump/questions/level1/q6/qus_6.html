@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADAVENTURE</title>
+</head>
+<body>
+<h1>Food Packing</h1>
+<br>In space distance is measured in terms of Light years, Although Udyan (Space Craft) is very capable of traveling such Distance but still it might take Years from one
+Planet to another. For Survival in mission Captain Harmit and his team needs food, but food months and years takes lot of space in a space craft. 
+To efficiently store food ISRO develop a special Rectangular wrap for breads in which 3 Bread Slices to be stored side by side but size of wrap is 
+much larger than 3 breads (Breads are square in shape and of equal size), Breads are arranged such a way that one side of each bread is in complete contact 
+with a bottom side of wrap (let’s say X axis).
+So, the coordinates of center of 3 breads are (X1, S/2), (X2, S/2) and (X3, S/2), we can move each bread by K units such that that side always remain in contact with X axis
+<br>
+Yours task is to find efficiency in putting bread i.e. the maximum area that can be formed where all 3 breads overlap each other
+
+<br><br><b>Input</b>
+<br>First Line is A denoting no of test cases
+<br>In each Testcase pair of 1st line is consisting S side of a square bread, K the distance by which we can move on each bread.
+<br>Second Line of each test case consist of 3 numbers denoting X coordinate of center of breads, 
+<br><br>
+<b>Output</b>
+<br>Print Maximum area of overlapping of 3 breads output should be upto 2 decimal places. 
+<br><br><b>Constraints</b>
+
+<br>1 <= A <= 200
+<br>1 <= S <= 20000
+<br>0 <= K <= 20000
+<br>-1000 <= Xi <= 1000
+<br><br><b>Example</b>
+<br><b>Input</b>
+<br>1
+<br>1 1
+<br>1 2 3
+<br>
+<br><b>Output</b>
+<br>1.00
+<br>
+<br><b>Explaination</b>
+<br> Bread with center(1,1)shift rightward 1 unit so new center (2,1)
+<br>Bread with center (3,1) shift left by 1 unit so center become(2,1)
+<br>so all 3 bread sandwitched so area = 1 square unit
+
+<br><br>
+
+</body>
+</html>
+
+
+

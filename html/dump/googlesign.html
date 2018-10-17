@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<!-- Latest compiled JavaScript -->
+
+<meta name ="google-signin-client_id" content ="481364252346-fkicc14vj7qtcgv7m33km2n3n64up13m.apps.googleusercontent.com">
+<script src="script.js"></script>
+<style>
+	.g-signin2{
+		margin-left: :500px;
+		margin-right: :200px;
+	}
+		.data{
+			display: ;
+		}
+	</style>
+</head>
+<body>
+  <script>
+    function onSuccess(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    var id = profile.getId();
+  var name=profile.getName();
+  var email= profile.getEmail();
+  var image=profile.getImageUrl();
+      console.log('Signed in as: ' + googleUser.getBasicProfile().getName());
+        var auth2 = gapi.auth2.getAuthInstance();
+          auth2.disconnect();
+         var xml = new XMLHttpRequest();
+          xml.onreadystatechange = function()
+    {
+    if(this.readyState == 4 && this.status == 200 )
+    {
+      //document.getElementById("response").innerHTML= xml.responseText;
+    }
+  }
+  xml.open("POST","demo1.php?id="+id+"&name="+name+"&email="+email+"&img="+image,true);
+  xml.send();  
+    window.location.href ="check_login1.php";
+    }
+  </script>
+  <div class="g-signin2" data-onsuccess="onSuccess"></div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+<!-- [END body] -->
+</html>

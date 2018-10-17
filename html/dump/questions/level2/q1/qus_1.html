@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADAVENTURE</title>
+</head>
+<body>
+<h1>Scerete Chatting</h1>
+<br>
+Genius are not made in a day, and so was our Captain Harmit, since his childhood he was very interested in math and computers science in his school day he and his friend Pari use pass a messages to each other, to maintain privacy they used an encrypting algorithm.
+<br>Encryption Include a message that is converted into a bit stream using ASCII format of 8 bits and a hash key k.
+<br>Encrypting Algorithm was to increase size of message stream k times by 1 bit and left shifting it(or appending 0 as Right Bit) by 1 bit each of k iterations than XOR ing these K streams. 
+Few year later Harmit wants to decode some old messages and remember those days can you Decrypt these messages for Harmit.
+<br><br>
+<b>Input Format</b>
+<br>First line contains A no of test cases.
+<br>The first line of each test case contains two integers N and K i.e. length of encrypted bit stream and hash key Resp.
+<br>The second line contains bit stream consist of ones and zeros.
+<br><br>
+<b>Constraints</b>
+<br>1 <= A <= 200
+<br>1 <= N <= 2000
+<br>1 <= K <= 100 
+<br><br>
+<b>Output Format</b>
+<br>
+Decoded message and print text. 
+<br>If ASCII value message is not in an of alphabhet of Capital Case than use 'value%26' character considerind A is at index '0'
+<br><br>
+<b>Example</b>
+<br>1
+<br>18 3
+<br>011111100111111111
+<br><br>
+Output:
+<br>HI
+<br><br>
+<b>Explaination</b>
+<br><pre>
+0100100001001001
+<br> 0100100001001001
+<br>  0100100001001001
+<br>------------------
+<br>011111100111111111
+</pre>
+<br><br>which is binary equivalent of HI and 'H' and 'I' both belongs to [A....Z].
+<br><br>
+<b>Note:</b> If you are not getting what they talk dont worry! its their matter of business just print it !!.
+
+<br><br>
+
+</body>
+</html>
+
+
+

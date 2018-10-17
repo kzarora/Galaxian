@@ -1,0 +1,26 @@
+-------------- "kOkO" Number -------------
+
+Komal is very fond of discovering new types of number. She discovered a new category of number, named "kOkO" number. A number is called "kOkO" number, if it consists only of digits 4 and 7. For example, 44, 747, 4 are "kOkO" numbers, but 745, 423, 111 are not.
+Now Komal is interested in evaluating smallest "kOkO" number in range [L, R]. Your task is to develop a program that evaluates the smallest "kOkO" number in the given range and if none then print -1;
+
+Example:
+For L = 1 and R = 2 the output should be -1.
+For L = 4 and R = 7 the output should be 4.
+
+Input:
+The first line contains an integer 't', denoting the number of test cases.
+Next 't' lines consists of two space seperated integers 'L' and 'R', where L and R represent the range.
+
+Output:
+For each given range you need to print a single integer (smallest "kOkO" number), if no "kOkO" number found then print -1;
+
+Sample Test Case:
+
+Input:
+2
+1 2
+4 7
+
+Output:
+-1
+4

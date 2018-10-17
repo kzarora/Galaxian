@@ -1,0 +1,5 @@
+/*
+void getNumbers(int *arr,int *n,int x,int y){
+	use 'arr' to return output numbers
+	use 'n' for number of elements in 'arr' array
+}  */
